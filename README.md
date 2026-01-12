@@ -53,17 +53,4 @@ This project moves beyond standard HTTP Request-Response cycles by implementing 
 * **Dynamic Profiles:** Edit bio, profile pictures, and visualize "Visa Journeys" (Custom Data Models).
 * **Security:** CSRF protection and Secure (WSS) WebSocket connections.
 
-## 🔧 Architecture Overview
 
-```mermaid
-graph TD
-    User[User Client] -->|WebSocket (WSS)| Daphne[Daphne ASGI Server]
-    User -->|HTTP (HTTPS)| Gunicorn[Gunicorn/Django WSGI]
-    
-    Daphne <-->|Pub/Sub| Redis[(Redis Channel Layer)]
-    Daphne -->|Async Writes| DB[(PostgreSQL Database)]
-    
-    subgraph "Real-Time Layer"
-    Daphne
-    Redis
-    end
