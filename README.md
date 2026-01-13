@@ -7,6 +7,7 @@
 ![WebSockets](https://img.shields.io/badge/Protocol-WebSockets-black?style=for-the-badge&logo=socket.io&logoColor=white)
 ![Deployment](https://img.shields.io/badge/Deployed_on-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)
 ![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Container-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 A scalable, full-featured social platform featuring a **high-performance real-time chat system**. Built using **Django Channels** and **ASGI** (Asynchronous Server Gateway Interface) to handle concurrent WebSocket connections, utilizing **Redis** as the message broker for low-latency communication.
 
